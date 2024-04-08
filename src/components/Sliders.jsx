@@ -1,5 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import pizza from "../assets/pizza.jpg";
+import burger from "../assets/burger.jpg";
 
 const Sliders = () => {
   const responsive = {
@@ -29,7 +31,12 @@ const Sliders = () => {
         autoPlaySpeed={3000}
         responsive={responsive}
       >
-        <div>hi</div>
+        <div>
+          <img src={pizza} alt="pizza" />
+        </div>
+        <div>
+          <img src={burger} alt="pizza" />
+        </div>
       </Carousel>
     </div>
   );
